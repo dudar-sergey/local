@@ -1,7 +1,7 @@
 <?php
 
 $mysqli = new mysqli("localhost", "root", "Lelfh123", "site");
-
+$mysqli->set_charset("utf8");
 function gl_products(){
     GLOBAL $mysqli;
     $products = array();
