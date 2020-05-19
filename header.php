@@ -39,6 +39,14 @@ include_once('DB.php');
       <li class="nav-item">
         <a class="nav-link" href="/index">Главная</a>
       </li>
+        <?php
+        if($_SESSION['admin'] == true)
+        {
+            echo '<li class="nav-item">
+        <a class="nav-link" href="adminPanel.php">Админ</a>
+      </li>';
+        }
+        ?>
       <li class="nav-item">
         <a class="nav-link" href="#">Каталог</a>
       </li>
