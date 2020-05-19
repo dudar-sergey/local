@@ -70,8 +70,7 @@ include_once('cat.php');
                 </h4>
                 <h5>$<?php echo $product['price'];?></h5>
                 <p class="card-text"><?php echo $product['intro'];?></p>
-                <button type="button" class="btn btn-dark">В корзину</button>
-              </div>
+                  <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-dark"><a class="product_id" data-id="<?php echo $product['id'];?>">В корзину</a></button>              </div>
             </div>
           </div>
           <?php } ?>
@@ -144,12 +143,7 @@ include_once('cat.php');
   </footer>
   <!-- Bootstrap core JavaScript -->
 
-  <?php
-  $current_id = $_POST['current_id'];
-  if($current_id){        
-  $result2 = $mysqli->query("INSERT INTO `cart` (id_product, id_user) VALUES ('".$current_id."', '".$_SESSION['id']."')");
-  }
-?>
+
 
   </body>
 

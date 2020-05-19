@@ -29,7 +29,7 @@ include_once('DB.php');
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">CrazyOil</a>
+  <a class="navbar-brand" href="index">CrazyOil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,23 +37,23 @@ include_once('DB.php');
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/index.php">Главная</a>
+        <a class="nav-link" href="/index">Главная</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Каталог</a>
       </li>
       <?php  if($_SESSION['id'] == ''){ ?>
       <li class="nav-item">
-        <a class="nav-link" href="/auth.php">Вход</a>
+        <a class="nav-link" href="/auth">Вход</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/registration.php">Регистрация</a>
+        <a class="nav-link" href="/registration">Регистрация</a>
       </li>
       <?php  } 
       else {
       ?>
       <li class="nav-item">
-        <a class="nav-link" href="/cart.php">Корзина</a>
+        <a class="nav-link" href="/cart">Корзина</a>
       </li>
     </ul>
     <div class="form-inline my-2 my-lg-0">
