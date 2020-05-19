@@ -18,7 +18,6 @@ include_once ('DB.php');
 include_once('cat.php');
     ?>
       <!-- /.col-lg-3 -->
-git remote
       <div class="col-lg-9">
 
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -86,7 +85,7 @@ git remote
                 </h4>
                 <h5>$<?php echo $product['price'];?></h5>
                 <p class="card-text"><?php echo $product['intro'];?></p>
-                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-dark"><a class="product_id" data-id="<?php echo $product['id'];?>">В корзину</a></button>
+                  <a class="product_id" data-id="<?php echo $product['id'];?>"><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-dark">В корзину</button></a>
               </div>
             </div>
           </div>

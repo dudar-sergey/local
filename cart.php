@@ -65,7 +65,7 @@ if($_SESSION['login'] != '')
                     </div>
                   </th>
                   <td class="border-0 align-middle"><strong><?php echo $res['price']?>$</strong></td>
-                  <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i><button type="button" class="btn btn-danger">X</button></a></td>
+                    <td class="border-0 align-middle"><a class="cart_product_id" data-id="<?php echo $res['id']; ?>"><button type="button" class="btn btn-danger">X</button></a></td>
                 </tr>
       <?php } ?>
               </tbody>
