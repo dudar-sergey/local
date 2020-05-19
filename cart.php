@@ -82,7 +82,7 @@ if($_SESSION['login'] != '')
               </li>
             </ul>
             <form class="form-signin" action="cart.php" method="post">
-            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-lg btn-block"><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Оформить заказ</a></button>
+            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-dark rounded-pill py-2 btn-block"><a href="#" class="git ">Оформить заказ</a></button>
                 </form>
           </div>
         </div>

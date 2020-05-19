@@ -44,16 +44,16 @@ include_once('DB.php');
       </li>
       <?php  if($_SESSION['id'] == ''){ ?>
       <li class="nav-item">
-        <a class="nav-link" href="/auth">Вход</a>
+        <a class="nav-link" href="/auth.php">Вход</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/registration">Регистрация</a>
+        <a class="nav-link" href="/registration.php">Регистрация</a>
       </li>
       <?php  } 
       else {
       ?>
       <li class="nav-item">
-        <a class="nav-link" href="/cart">Корзина</a>
+        <a class="nav-link" href="/cart.php">Корзина</a>
       </li>
     </ul>
     <div class="form-inline my-2 my-lg-0">
