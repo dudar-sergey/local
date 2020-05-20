@@ -66,7 +66,7 @@ include_once('DB.php');
     </ul>
     <div class="form-inline my-2 my-lg-0">
         <p class="text-white"><?php echo $_SESSION['login'];?>
-        <button type="button" class="btn btn-light"><a href="/exit.php">Выход</a></button>
+        <a href="/exit.php">Выход</a>
   </div>
       <?php } ?>
   </div>
